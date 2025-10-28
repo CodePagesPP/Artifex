@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/2f3116ebd7.js" crossorigin="anonymous"></script>
     <title>Artifex</title>
 </head>
 
@@ -12,7 +13,7 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="" class="logo">
-                <img src="./assets/logo.webp" alt="">
+                <img src="./assets/logoArtifex.webp" alt="">
             </a>
             
             <div class="nav-links">
@@ -36,13 +37,18 @@
     </nav>
 
     <section class="hero-section">
+
+        <video id="video-fondo" autoplay loop muted playsinline>
+            <source src="../assets/video/REEL3.mp4" type="video/mp4">
+            </video>
+
         <div class="hero-content">
-            <h1>Bass Brothers Roofing LLC</h1>
-            <p>Located in Ruidoso and Alamogordo, NM, Bass Brothers Roofing LLC is a trusted roofing company providing top quality services to the local community and surrounding areas.</p>
+            <h1>Artifex Roof</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum possimus quam praesentium assumenda corporis qui deserunt maiores suscipit provident totam eos dolorum quis dolorem ullam, magnam sunt? Sequi, exercitationem fugit!</p>
             
             <div class="hero-buttons">
                 <a href="#" class="btn btn-primary">Get a Free Quote</a>
-                <a href="#" class="btn btn-secondary">Call Now +1 (575) 585-7063</a>
+                <a href="#" class="btn btn-secondary">Call Now</a>
             </div>
         </div>
     </section>
@@ -51,7 +57,7 @@
         <div class="about-us-container">
             
             <div class="about-us-image-column">           
-                <img src="https://img.freepik.com/free-photo/full-shot-people-relaxing-indoors_23-2151030645.jpg?t=st=1761614696~exp=1761618296~hmac=a141d4421e35ad09b74a1ca1fa05e5b4fddc5905f6a2cbdea22b4b3a2bbb4e2b&w=1060" alt="" class="main-image">
+                <img src="./assets/about.webp" alt="" class="main-image">
                 
                 <div class="social-icons">
                     <a href="#" aria-label="Facebook">A</a>
@@ -152,7 +158,7 @@
 
                 <div class="service-card" 
                     data-service-description="Nuestro equipo experto en consultoría te guiará para optimizar tus estrategias y alcanzar tus metas comerciales.">
-                    <img src="https://img.freepik.com/free-photo/modern-business-building-scenery-touching-sky_181624-5785.jpg?t=st=1761628877~exp=1761632477~hmac=56de7b5b278ff8cf064bd27e075a18ce4805ca012ecd254926a1cfb6043c670b&w=1480" alt="">
+                    <img src="./assets/services/service1.png" alt="">
                     <div class="card-info">
                         <h3>Service</h3>
                         <p class="card-subtitle">Lorem</p>
@@ -164,7 +170,7 @@
 
                 <div class="service-card" 
                     data-service-description="Desarrollamos soluciones web y móviles innovadoras, adaptadas a tus necesidades, desde e-commerce hasta aplicaciones personalizadas.">
-                    <img src="https://img.freepik.com/free-photo/cityscape-empty-streets_23-2149258674.jpg?t=st=1761628918~exp=1761632518~hmac=3625e97403417482b4380eeee87ba4529e311fbd85d274d4b7c899c017876623&w=1060" alt="">
+                    <img src="./assets/services/service2.png" alt="">
                     <div class="card-info">
                         <h3>Service</h3>
                         <p class="card-subtitle">Lorem</p>
@@ -176,7 +182,7 @@
 
                 <div class="service-card" 
                     data-service-description="Creamos identidades de marca impactantes y materiales de marketing visualmente atractivos que conectan con tu audiencia.">
-                    <img src="https://img.freepik.com/free-photo/vertical-low-angle-shot-buildings-new-york_181624-38456.jpg?t=st=1761628965~exp=1761632565~hmac=531fbaa84a94af76a92db50db8a4a1e174e65ffbbb5587e688e37ea01aafd273&w=1060" alt="">
+                    <img src="./assets/services/service3.png" alt="">
                     <div class="card-info">
                         <h3>Service</h3>
                         <p class="card-subtitle">Lorem</p>
@@ -188,7 +194,7 @@
 
                 <div class="service-card" 
                     data-service-description="Gestionamos tus redes sociales y creamos contenido estratégico para aumentar tu visibilidad y engagement.">
-                    <img src="https://img.freepik.com/free-photo/low-view-modern-skyscrapers-office-buildings_23-2148836748.jpg?t=st=1761629009~exp=1761632609~hmac=7071319a1d426277bb87987d14e4596853b14f3a0392c1e0ba75f367cc79b12f&w=1060" alt="">
+                    <img src="./assets/services/service4.png" alt="">
                     <div class="card-info">
                         <h3>Service</h3>
                         <p class="card-subtitle">Lorem</p>
@@ -200,7 +206,7 @@
 
                 <div class="service-card" 
                     data-service-description="Gestionamos tus redes sociales y creamos contenido estratégico para aumentar tu visibilidad y engagement.">
-                    <img src="https://img.freepik.com/free-photo/skyscraper-business-building-city_1268-14291.jpg?t=st=1761630876~exp=1761634476~hmac=403a2381cbc5e0e27154d43d5507e5722f748b2a15f2c05662f25a479d6f5807&w=1060" alt="">
+                    <img src="./assets/services/service5.png" alt="">
                     <div class="card-info">
                         <h3>Service</h3>
                         <p class="card-subtitle">Lorem</p>
@@ -276,52 +282,6 @@
             <p>Take a look for yourself on what your neighbors are saying about us.</p>
         </div>
     
-        <div class="reviews-buttons">
-    
-            <a href="#" class="review-button">
-                <span class="button-icon">
-                    <svg aria-hidden="true" class="text-blue-900 transition-transform w-7 h-7" viewBox="0 0 20 20"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z"
-                            fill="#3cba54	"></path>
-                        <path
-                            d="M10.2041 20C12.9591 20 15.272 19.1111 16.9614 17.5778L13.7414 15.1333C12.8798 15.7222 11.7233 16.1333 10.2041 16.1333C7.50566 16.1333 5.21542 14.3889 4.39902 11.9778L4.27935 11.9877L1.12957 14.3766L1.08838 14.4889C2.76637 17.7555 6.21309 20 10.2041 20Z"
-                            fill="#f4c20d"></path>
-                        <path
-                            d="M4.39905 11.9778C4.18363 11.3556 4.05897 10.6889 4.05897 10C4.05897 9.3111 4.18363 8.64446 4.38772 8.02225L4.38201 7.88973L1.19276 5.46246L1.08841 5.5111C0.39683 6.86668 0 8.38893 0 10C0 11.6111 0.39683 13.1333 1.08841 14.4889L4.39905 11.9778Z"
-                            fill="#db3236"></path>
-                        <path
-                            d="M10.2041 3.86664C12.1201 3.86664 13.4126 4.67775 14.1496 5.35557L17.0294 2.6C15.2608 0.988893 12.9591 0 10.2041 0C6.21309 0 2.76637 2.24443 1.08838 5.51107L4.38769 8.02221C5.21542 5.61111 7.50566 3.86664 10.2041 3.86664Z"
-                            fill="#4885ed"></path>
-                    </svg> </span>
-                <span class="button-text">Leave us a review on Google</span>
-            </a>
-    
-            <a href="#" class="review-button">
-                <span class="button-icon">
-                    <svg aria-hidden="true" class="text-blue-500 w-8 h-8" viewBox="0 0 30 30" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                            fill="currentColor"></path>
-                    </svg></span>
-                <span class="button-text">Leave us a review on Facebook</span>
-            </a>
-    
-            <a href="#" class="review-button">
-                <span class="button-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
-                            fill="#F0B90A"></path>
-                    </svg>
-                </span>
-                <span class="button-text">Leave us a review</span>
-            </a>
-    
-        </div>
-    
         <div class="reviews-grid">
     
             <div class="review-card">
@@ -333,23 +293,6 @@
                     <div class="review-author">
                         <strong>Efen Gonzales</strong>
                         <span>Alamogordo, NM</span>
-                    </div>
-                    <div class="review-source">
-                        <svg aria-hidden="true" class="text-blue-900 transition-transform w-7 h-7" viewBox="0 0 20 20"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z"
-                                fill="#3cba54	"></path>
-                            <path
-                                d="M10.2041 20C12.9591 20 15.272 19.1111 16.9614 17.5778L13.7414 15.1333C12.8798 15.7222 11.7233 16.1333 10.2041 16.1333C7.50566 16.1333 5.21542 14.3889 4.39902 11.9778L4.27935 11.9877L1.12957 14.3766L1.08838 14.4889C2.76637 17.7555 6.21309 20 10.2041 20Z"
-                                fill="#f4c20d"></path>
-                            <path
-                                d="M4.39905 11.9778C4.18363 11.3556 4.05897 10.6889 4.05897 10C4.05897 9.3111 4.18363 8.64446 4.38772 8.02225L4.38201 7.88973L1.19276 5.46246L1.08841 5.5111C0.39683 6.86668 0 8.38893 0 10C0 11.6111 0.39683 13.1333 1.08841 14.4889L4.39905 11.9778Z"
-                                fill="#db3236"></path>
-                            <path
-                                d="M10.2041 3.86664C12.1201 3.86664 13.4126 4.67775 14.1496 5.35557L17.0294 2.6C15.2608 0.988893 12.9591 0 10.2041 0C6.21309 0 2.76637 2.24443 1.08838 5.51107L4.38769 8.02221C5.21542 5.61111 7.50566 3.86664 10.2041 3.86664Z"
-                                fill="#4885ed"></path>
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -364,23 +307,6 @@
                     <div class="review-author">
                         <strong>Memo Licona</strong>
                         <span>Home Owner</span>
-                    </div>
-                    <div class="review-source">
-                        <svg aria-hidden="true" class="text-blue-900 transition-transform w-7 h-7" viewBox="0 0 20 20"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z"
-                                fill="#3cba54	"></path>
-                            <path
-                                d="M10.2041 20C12.9591 20 15.272 19.1111 16.9614 17.5778L13.7414 15.1333C12.8798 15.7222 11.7233 16.1333 10.2041 16.1333C7.50566 16.1333 5.21542 14.3889 4.39902 11.9778L4.27935 11.9877L1.12957 14.3766L1.08838 14.4889C2.76637 17.7555 6.21309 20 10.2041 20Z"
-                                fill="#f4c20d"></path>
-                            <path
-                                d="M4.39905 11.9778C4.18363 11.3556 4.05897 10.6889 4.05897 10C4.05897 9.3111 4.18363 8.64446 4.38772 8.02225L4.38201 7.88973L1.19276 5.46246L1.08841 5.5111C0.39683 6.86668 0 8.38893 0 10C0 11.6111 0.39683 13.1333 1.08841 14.4889L4.39905 11.9778Z"
-                                fill="#db3236"></path>
-                            <path
-                                d="M10.2041 3.86664C12.1201 3.86664 13.4126 4.67775 14.1496 5.35557L17.0294 2.6C15.2608 0.988893 12.9591 0 10.2041 0C6.21309 0 2.76637 2.24443 1.08838 5.51107L4.38769 8.02221C5.21542 5.61111 7.50566 3.86664 10.2041 3.86664Z"
-                                fill="#4885ed"></path>
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -397,23 +323,6 @@
                     <div class="review-author">
                         <strong>Gary Skelton</strong>
                         <span>Home Owner</span>
-                    </div>
-                    <div class="review-source">
-                        <svg aria-hidden="true" class="text-blue-900 transition-transform w-7 h-7" viewBox="0 0 20 20"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z"
-                                fill="#3cba54	"></path>
-                            <path
-                                d="M10.2041 20C12.9591 20 15.272 19.1111 16.9614 17.5778L13.7414 15.1333C12.8798 15.7222 11.7233 16.1333 10.2041 16.1333C7.50566 16.1333 5.21542 14.3889 4.39902 11.9778L4.27935 11.9877L1.12957 14.3766L1.08838 14.4889C2.76637 17.7555 6.21309 20 10.2041 20Z"
-                                fill="#f4c20d"></path>
-                            <path
-                                d="M4.39905 11.9778C4.18363 11.3556 4.05897 10.6889 4.05897 10C4.05897 9.3111 4.18363 8.64446 4.38772 8.02225L4.38201 7.88973L1.19276 5.46246L1.08841 5.5111C0.39683 6.86668 0 8.38893 0 10C0 11.6111 0.39683 13.1333 1.08841 14.4889L4.39905 11.9778Z"
-                                fill="#db3236"></path>
-                            <path
-                                d="M10.2041 3.86664C12.1201 3.86664 13.4126 4.67775 14.1496 5.35557L17.0294 2.6C15.2608 0.988893 12.9591 0 10.2041 0C6.21309 0 2.76637 2.24443 1.08838 5.51107L4.38769 8.02221C5.21542 5.61111 7.50566 3.86664 10.2041 3.86664Z"
-                                fill="#4885ed"></path>
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -535,17 +444,74 @@
                 </select>
                 </div>
 
-                <div class="form-recaptcha-placeholder">
-                reCAPTCHA v2 placeholder
-                </div>
-
-                <button type="submit" class="btn-submit">GO!</button>
+                <button type="submit" class="btn-submit">Submit</button>
                 
             </form>
             </div>
 
         </div>
     </section>
+
+    <footer class="site-footer">
+
+        <div class="footer-social-bar">
+            <a href="#" class="social-link facebook-bg" aria-label="Facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link instagram-bg" aria-label="Instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link linkedin-bg" aria-label="LinkedIn">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-container">
+                
+                <h2>CONTACT INFORMATION</h2>
+                
+                <div class="footer-columns">
+                    
+                    <div class="footer-column">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime ratione officia delectus reprehenderit perspiciatis? Omnis, culpa! Esse repellendus, harum consectetur nulla itaque nostrum eaque provident, fugit alias tenetur possimus.
+                        </p>
+                        <p class="license-info">
+                            Lorem
+                            <br>
+                            Lorem
+                        </p>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>QUICK LINKS</h3>
+                        <ul class="quick-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>CONTACT US</h3>
+                        <p>Phone: 855-765-5865</p>
+                        <p>Email: info@apexroofs.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Artifex. All rights reserved.</p>
+        </div>
+
+    </footer>
 </body>
 <script src="./js/script.js"></script>
 <script src="./js/faq.js"></script>

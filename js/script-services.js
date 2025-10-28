@@ -3,18 +3,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const serviceCards = document.querySelectorAll('.service-card');
     const servicesSection = document.querySelector('.services-section');
 
+    if (!servicesWrapper || !servicesSection) return;
+
+    let targetX = 0;
+    let currentX = 0;
+    const smoothing = 0.08;
+
     servicesSection.addEventListener('mousemove', (e) => {
         const wrapperWidth = servicesWrapper.scrollWidth - servicesWrapper.clientWidth;
-
-        if (wrapperWidth <= 0) return; 
+        
+        if (wrapperWidth <= 0) {
+            targetX = 0;
+            return;
+        }
 
         const mouseX = e.clientX;
         const sectionRect = servicesSection.getBoundingClientRect();
+        
         const mousePercentage = (mouseX - sectionRect.left) / sectionRect.width;
+        
         const scrollAmount = wrapperWidth * Math.max(0, Math.min(1, mousePercentage));
-
-        servicesWrapper.style.transform = `translateX(-${scrollAmount}px)`;
+        
+        targetX = -scrollAmount;
     });
+
+    const animationLoop = () => {
+        let distance = targetX - currentX;
+
+        if (Math.abs(distance) < 0.1) {
+            currentX = targetX;
+        } else {
+            currentX += distance * smoothing;
+        }
+
+        servicesWrapper.style.transform = `translateX(${currentX.toFixed(3)}px)`;
+
+        requestAnimationFrame(animationLoop);
+    };
+
+    animationLoop();
 
     serviceCards.forEach(card => {
         const overlay = card.querySelector('.service-description-overlay');
