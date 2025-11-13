@@ -67,5 +67,53 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+});
+
+/* =========================================
+   Lógica para el Acordeón de Servicios
+========================================= */
+
+// Espera a que cargue el DOM
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Selecciona todos los botones (triggers) del acordeón de servicios
+    const serviceTriggers = document.querySelectorAll('.service-accordion-trigger');
+
+    serviceTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            
+            // 1. Encuentra el 'item' padre (el <div> que contiene botón y contenido)
+            const parentItem = this.parentElement;
+            
+            // 2. Encuentra el panel de contenido (es el siguiente elemento hermano)
+            const contentPanel = this.nextElementSibling;
+
+            // 3. Quita la clase 'active' de CUALQUIER otro item que esté abierto
+            serviceTriggers.forEach(t => {
+                const item = t.parentElement;
+                if (item !== parentItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    t.nextElementSibling.style.maxHeight = '0';
+                    t.nextElementSibling.style.padding = '0';
+                }
+            });
+
+            // 4. Alterna (toggle) la clase 'active' en el item clickeado
+            parentItem.classList.toggle('active');
+
+            // 5. Abre o cierra el panel de contenido
+            if (parentItem.classList.contains('active')) {
+                // Si está activo, abre el panel
+                // Se usa scrollHeight para darle la altura exacta que necesita el contenido
+                contentPanel.style.maxHeight = contentPanel.scrollHeight + 'px';
+                // (El padding ya lo controla el CSS, pero lo dejamos por si acaso)
+                // contentPanel.style.padding = '20px 0'; 
+            } else {
+                // Si no está activo, ciérralo
+                contentPanel.style.maxHeight = '0';
+                // contentPanel.style.padding = '0';
+            }
+        });
+    });
 
 });
