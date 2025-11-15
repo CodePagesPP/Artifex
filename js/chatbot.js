@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label> 
+        <input type="tel" id="phone" name="phone" required>
         
         <button type="submit">Submit</button>
       </form>
@@ -94,11 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = form.querySelector('#name').value;
     const email = form.querySelector('#email').value;
     const submitButton = form.querySelector('button');
-
+    const phone = form.querySelector('#phone').value;
     submitButton.disabled = true;
-    submitButton.textContent = 'Enviando...';
+    submitButton.textContent = 'Sending...';
 
-    const formData = { name, email };
+    const formData = { name, email, phone};
 
  
     fetch(phpScriptURL, {
