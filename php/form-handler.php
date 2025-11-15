@@ -23,11 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $name = $data->name ?? "No proporcionado";
     $email = $data->email ?? "";
+    $phone = $data->phone ?? "No proporcionado";
 
 
-    if (empty($email)) {
+    if (empty($email)|| empty($phone)) {
         http_response_code(400); 
-        echo json_encode(["status" => "error", "message" => "El email es obligatorio."]);
+        echo json_encode(["status" => "error", "message" => "Email or phone number is required."]);
         exit;
     }
 
@@ -57,6 +58,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <tr>
                     <td style='padding: 12px 0; color: #555; font-size: 16px;'><strong>Email:</strong></td>
                     <td style='padding: 12px 0; color: #111; font-size: 16px;'>$email</td>
+                </tr>
+                <tr style='border-bottom: 1px solid #f0f0f0;'>
+                    <td style='padding: 12px 0; color: #555; font-size: 16px;'><strong>Phone:</strong></td>
+                    <td style='padding: 12px 0; color: #111; font-size: 16px;'>$phone</td>
                 </tr>
             </table>
             
