@@ -1538,3 +1538,131 @@ section[id] {
         padding: 1.2rem 0.5rem;
     }
 }
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-blue);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+.chat-window {
+  display: none; 
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #ddd;
+}
+
+
+.chat-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-body {
+  padding: 15px;
+  height: 250px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.message {
+  padding: 8px 12px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+
+.message.bot {
+  background-color: #e9e9eb;
+  color: #333;
+  float: left;
+  clear: both;
+}
+
+
+.message.user {
+  background-color:  var(--color-blue);
+  color: white;
+  float: right;
+  clear: both;
+}
+
+.chat-footer {
+  border-top: 1px solid #ddd;
+}
+
+#chatInputForm {
+  display: flex;
+  padding: 10px;
+}
+
+#chatInput {
+  flex-grow: 1; 
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+#chatInputForm button {
+  background-color:  var(--color-blue);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+#leadForm {
+  padding: 0;
+  margin: 0;
+}
+#leadForm label {
+  color: #333; 
+}
+#leadForm input {
+  background-color: white; 
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#leadForm button {
+  background-color:  var(--color-blue); 
+  color: white;
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#closeChat {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
