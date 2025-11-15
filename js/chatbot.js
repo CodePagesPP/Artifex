@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-  const phpScriptURL = 'https://tu-dominio.com/enviar_correo.php'; 
+  const phpScriptURL = 'http://localhost/Artifex/php/form-handler.php'; 
 
   const chatIcon = document.getElementById('chatIcon');
   const chatWindow = document.getElementById('chatWindow');
