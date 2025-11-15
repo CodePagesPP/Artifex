@@ -167,7 +167,7 @@ body {
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 400px;
   height: auto;
   object-fit: fill;
   z-index: 1;
