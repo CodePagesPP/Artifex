@@ -160,38 +160,35 @@ body {
   padding-top: 150px;
 }
 
-#video-fondo {
+.video-fondo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  width: 10px;
-  height: 10px;
+  width: auto;
+  height: auto;
   object-fit: fill;
   z-index: 1;
-  /* Opcional: si el video es muy brillante y no deja leer */
   filter: brightness(0.7);
 }
-
 
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 550px; 
-  text-align: left; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: left;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem; 
+  font-size: 3.9rem; 
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .hero-content p {
-  font-size: 1.15rem; 
+  font-size: 1.3rem; 
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -220,6 +217,10 @@ body {
   border-color: var(--color1);
 }
 
+.btnHero {
+  font-size: 1.1rem;
+}
+
 .btn-primary:hover {
   background-color: var(--color-gray);
   border-color: var(--color-white);
@@ -230,6 +231,10 @@ body {
   background-color: var(--color-white);
   color: #212529;
   border-color: var(--color-white);
+}
+
+.btnHero {
+  font-size: 1.1rem;
 }
 
 .btn-secondary:hover {
@@ -402,9 +407,9 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    gap: 100px;
+    gap: 7%;
 }
 
 .about-us-image-column {
@@ -433,6 +438,7 @@ body {
     display: flex;
     gap: 25px;
     margin-top: 20px;
+    justify-self: center;
 }
 
 .social-icons a {
@@ -457,7 +463,7 @@ body {
 }
 
 .about-us-content-column p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
     margin-bottom: 20px;
@@ -1665,4 +1671,27 @@ section[id] {
   font-size: 20px;
 }
 
+#foot-text-left {
+  text-align: left;
+}
 
+#foot-text-right {
+  text-align: right;
+}
+
+#video-desktop {
+    display: block;
+}
+#video-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #video-desktop {
+        display: none;
+    }
+    
+    #video-mobile {
+        display: block;
+    }
+}
