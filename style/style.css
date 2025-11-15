@@ -1458,6 +1458,15 @@ body {
         width: 130px;
         height: 130px;
     }
+
+    
+    #foot-text-left {
+      text-align: center;
+    }
+
+    #foot-text-right {
+      text-align: center;
+    }
 }
 
 section[id] {
@@ -1693,5 +1702,15 @@ section[id] {
     
     #video-mobile {
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #foot-text-left {
+      text-align: center;
+    }
+
+    #foot-text-right {
+      text-align: center;
     }
 }
