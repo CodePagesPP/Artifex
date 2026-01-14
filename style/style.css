@@ -1371,16 +1371,18 @@ body {
 }
 
 .team-grid {
-    display: grid;
-    /* 4 columnas en desktop, como el ejemplo */
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
     max-width: 1300px;
     margin: 0 auto;
 }
 
 .team-card {
     text-align: center;
+    width: calc(25% - 2rem);
+    min-width: 220px;
 }
 
 .team-image-wrapper {
@@ -1432,10 +1434,8 @@ body {
 /* --- Responsividad para la sección Team --- */
 
 @media (max-width: 992px) {
-    .team-grid {
-        /* 2 columnas en tablet */
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
+    .team-card {
+        width: calc(50% - 2.5rem); 
     }
 }
 
@@ -1448,17 +1448,14 @@ body {
         font-size: 2rem;
     }
 
-    .team-grid {
-        /* 1 columna en móvil */
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+    .team-card {
+        width: 100%;
     }
     
     .team-image-wrapper {
         width: 130px;
         height: 130px;
     }
-
     
     #foot-text-left {
       text-align: center;
