@@ -1713,3 +1713,51 @@ section[id] {
       text-align: center;
     }
 }
+
+
+.locations-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left; 
+}
+
+.state-group:last-child {
+    grid-column: span 2; /* Hace que Kentucky ocupe el ancho total abajo */
+    text-align: center; 
+}
+
+.state-group {
+    flex: 1;
+    min-width: 140px;
+}
+
+.state-group h4 {
+    color: var(--color-white); 
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 5px;
+}
+
+.state-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.state-group ul li {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 18px;
+}
+
+
+.state-group ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color:var(--color-orange); 
+    font-weight: bold;
+}
