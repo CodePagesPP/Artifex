@@ -1012,6 +1012,12 @@ body {
   margin: 0 auto;
 }
 
+.cta-content .btnHero {
+  display: block;
+  margin-top: 20px;
+  width: 40%;
+}
+
 
 .cta-content h2 {
   font-size: clamp(2.5rem, 5vw, 3.5rem); 
@@ -1239,7 +1245,7 @@ body {
 }
 
 .footer-container {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1257,6 +1263,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* Para que se apilen en móvil */
     justify-content: space-between;
+    align-items: flex-start;
     gap: 30px; /* Espacio entre columnas */
 }
 
@@ -1266,8 +1273,18 @@ body {
     text-align: center;
 }
 
+.footer-column:first-child {
+    flex: 3; 
+}
+
+.footer-column:not(:first-child) {
+    flex: 1;
+    text-align: center;
+}
+
 .footer-column h3 {
     font-size: 1.2rem;
+    margin-top: 0;
     font-weight: 600;
     margin-bottom: 20px;
     color: #fff;
@@ -1716,20 +1733,19 @@ section[id] {
 
 
 .locations-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: left; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 40px;
 }
 
-.state-group:last-child {
-    grid-column: span 2; /* Hace que Kentucky ocupe el ancho total abajo */
-    text-align: center; 
-}
+
 
 .state-group {
+    min-width: 150px;
     flex: 1;
-    min-width: 140px;
 }
 
 .state-group h4 {
@@ -1738,6 +1754,7 @@ section[id] {
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 5px;
+    white-space: nowrap;
 }
 
 .state-group ul {
@@ -1751,6 +1768,7 @@ section[id] {
     margin-bottom: 5px;
     position: relative;
     padding-left: 18px;
+    text-align: left;
 }
 
 
